@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+}
+
+#scr{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(1, 157, 247, 0.5)
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color:rgb(98, 160, 223);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    font-size: 15px;
+}
+
+#hmsa{
+    height: 50px;
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown{
+    margin-top: 50px;
+    width: 120px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: rgb(98, 160, 223);
+}
+
+#menu{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#services{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.down{
+    font-size: 25px;
+    line-height: 66px;
+}
+
+#up{
+    margin-top: 24px;
+    margin-left: 15px;
+    display: none;
+    position: absolute;
+    color: white;
+}
+
+#menu:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu:hover #up{
+    display: block;
+}
+
+.line{
+    width: 120px;
+    height: 1px;
+    background-color: rgb(98, 160, 223);
+}
+
+.link{
+    padding: 10px;
+    height: 10px;
+    line-height: 10px;
+}
+
+#link3{
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{
+    line-height: 7px;
+    font-size: 25px;
+}
+
+#user{
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    height: 35px;
+}
+
+#log{
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 21px;
+}
+
+#sign{
+    border: 2px solid white;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(98, 160, 223);
+    width: 100px;
+    text-align: center;
+    line-height: 21px;
+}

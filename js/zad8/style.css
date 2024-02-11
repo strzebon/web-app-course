@@ -1,0 +1,59 @@
+body{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.require{
+    display: flex;
+    align-items: center;
+}
+
+.cancel{
+    color:lightgrey;
+    margin-right: 3px;
+}
+
+.check_circle{
+    color: green;
+    margin-right: 3px;
+}
+
+.require{
+    font-size: 11px;
+}
+
+p{
+    margin: 5px 0;
+}
+input{
+    height: 20px;
+    width: 200px;
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid green;
+}
+
+.pole{
+    position: relative;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.eye{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: grey;
+    display: none;
+    cursor: pointer;
+}
+
+#err{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: red;
+    display: none;
+}

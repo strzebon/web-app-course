@@ -1,0 +1,22 @@
+<div *ngIf="posts">
+    <form (submit)="onSubmit(titleInput.value, bodyInput.value)">
+        <label>
+          Tytuł:
+          <input type="text" name="title" #titleInput>
+        </label>
+        <label id="body">
+            Body:
+            <input type="text" name="title" #bodyInput>
+        </label>
+        <button type="submit">Dodaj post</button>
+      </form>
+    <h2>Posty</h2>
+    <ul>
+      <li *ngFor="let post of posts">
+        <span class="title">{{ post.title }}</span><br/>
+        <span>{{ post.body }}</span>
+        <br><br>
+      </li>
+    </ul>
+    
+  </div>

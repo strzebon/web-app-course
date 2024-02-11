@@ -1,0 +1,12 @@
+<h1 *ngIf="!loaded">loading...</h1>
+<div *ngIf="loaded">
+    <div id="container" *ngIf="photos">
+      <div class="photo" *ngFor="let photo of photos">
+        <img [src]="photo.thumbnailUrl" (click)="showPhoto(photo.id)">
+      </div>
+    </div>
+    <div *ngIf="error">
+      <p>Wystąpił błąd podczas pobierania zdjęć z serwera.</p>
+    </div>
+  </div>
+  

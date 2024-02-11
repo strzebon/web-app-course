@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+form{
+    margin-top: 50px;
+    width: 90%;
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.pole{
+    width: 40%;
+    margin-right: 15px;
+}
+
+#dodaj{
+    width: 20%;
+    background-color: green;
+    color: white;
+    height: 21px;
+    cursor: pointer;
+}
+
+.sidetext{
+    font-size: 10px;
+    margin: 0;
+}
+
+input{
+    width: 100%;
+}
+
+.section{
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid grey;
+    margin-top: 20px;
+}
+
+i{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+}
+
+.pname{
+    font-weight: bold;
+}
+
+#book{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

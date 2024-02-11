@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#bg{
+    width: 100%;
+    height: 900px;
+    background-color:dodgerblue;
+    clip-path: polygon(100% 0, 100% 24%, 7% 33%, 0 33%, 0 0);
+    position: absolute;
+    z-index: -1;
+}
+
+main{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin: 40px;
+    justify-content: space-between;
+}
+
+h1{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#info{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+}
+
+#left{
+    width: 63%;
+    animation-name: left_a;
+    animation-duration: 2s;
+}
+
+#right{
+    width: 25%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    color:grey;
+    padding: 25px;
+    animation-name: right_a;
+    animation-duration: 2s;
+}
+
+#send{
+    background-color: dodgerblue;
+    color: white;
+    border-width: 0;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+}
+
+input{
+    border-width: 0;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+}
+
+@keyframes left_a {
+    from {transform: translateX(-100%); opacity: 0.3;}
+    to {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes right_a {
+    from {transform: translateX(100%); opacity: 0.3;}
+    to {transform: translateX(0%); opacity: 1;}
+}
+ 
+@keyframes top_a {
+    from {transform: translateY(-100%); opacity: 0.3;}
+    to {transform: translateY(0%); opacity: 1;}
+}
+
+@keyframes bottom_a {
+    from {transform: translateY(100%); opacity: 0.3;}
+    to {transform: translateY(0%); opacity: 1;}
+}
+
+@media screen and (max-width: 640px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    #left{
+        width: 80%;
+        animation-name: top_a;
+        animation-duration: 2s;
+    }
+
+    #right{
+        width: 70%;
+        animation-name: bottom_a;
+        animation-duration: 2s;
+    }
+
+    #bg{
+        height: 100vh;
+        clip-path: polygon(100% 0, 100% 24%, 8% 100%, 0 100%, 0 0);
+    }
+
+    
+}

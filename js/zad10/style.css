@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+#board{
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    z-index: 1;
+    cursor: default;
+}
+
+#ball{
+    background-color:#b60000;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+#info{
+    position: absolute;
+    color: red;
+    display: none;
+    z-index: 2;
+}

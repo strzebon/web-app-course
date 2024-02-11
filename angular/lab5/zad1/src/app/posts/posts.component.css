@@ -1,0 +1,17 @@
+.title{
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+label{
+    margin-right: 20px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}

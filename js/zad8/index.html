@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>New password</p>
+    <div class="pole">
+        <input id="pwd" type="password">
+        <i id="eye1" class="eye material-icons" style="font-size: 16px;">visibility_off</i>
+    </div>
+    <p>Repeat new password</p>
+    <div class="pole">
+        <input id="repeat" type="password">
+        <i id="eye2" class="eye material-icons" style="font-size: 16px;">visibility_off</i>
+    </div>
+    <p id="err">Hasła są różne</p>    
+    <p>Password requirements</p>
+    <div id="r1" class="require">
+        <i class="cancel material-icons" style="font-size: 15px;">cancel</i>
+        <i class="check_circle material-icons" style="font-size: 15px; display: none;">check_circle</i>
+        <p>at least 8 characters</p>
+    </div>
+    <div id="r2" class="require">
+        <i class="cancel material-icons" style="font-size: 15px;">cancel</i>
+        <i class="check_circle material-icons" style="font-size: 15px; display: none;">check_circle</i>
+        <p>at least one special character</p>
+    </div>
+    <div id="r3" class="require">
+        <i class="cancel material-icons" style="font-size: 15px;">cancel</i>
+        <i class="check_circle material-icons" style="font-size: 15px; display: none;">check_circle</i>
+        <p>at least one capital letter</p>
+    </div>
+    <div id="r4" class="require">
+        <i class="cancel material-icons" style="font-size: 15px;">cancel</i>
+        <i class="check_circle material-icons" style="font-size: 15px; display: none;">check_circle</i>
+        <p>at least one digit</p>
+    </div>
+</body>
+</html>

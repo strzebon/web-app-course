@@ -1,0 +1,27 @@
+<div id="container">
+  <div>
+    <label for="brand">Wybierz markę samochodu:</label>
+    <select id="brand" [(ngModel)]="selectedBrand" (ngModelChange)="changedBrand()">
+      <option *ngFor="let car of cars, index as i" value="{{i}}">{{car.brand}}</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <label for="model">Wybierz model samochodu:</label>
+    <select id="model" [(ngModel)]="selectedModel" (ngModelChange)="changedModel()">
+      <option *ngFor="let model of cars[selectedBrand].model, index as i" value="{{i}}">{{model}}</option>
+    </select>
+  </div>
+  <br>
+  <div id="colors">
+    <div id="str">Wybierz kolor samochodu:</div>
+    <div id="m{{i}}" *ngFor="let color of cars[selectedBrand].color[selectedModel], index as i">
+      <input id="c{{i}}" type="radio" name="color">
+      <label for="c{{i}}" class="square" [ngStyle]="{backgroundColor: color, borderColor: color}" (click)="clicked($event)"></label>
+    </div>
+  </div>
+  <div *ngIf="show">
+    <p id="selectedCar">Wybrano samochód: {{cars[selectedBrand].brand}} {{cars[selectedBrand].model[selectedModel]}} {{selectedColor}}</p>
+    <p>Szcegóły wyposażenia: {{cars[selectedBrand].equipment[selectedModel]}}</p>
+  </div>
+</div>

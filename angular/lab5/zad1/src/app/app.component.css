@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dodgerblue;
+    height: 50px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;    
+}
+
+a:hover{
+    background-color: rgb(91, 171, 250);
+}
+
+#container{
+    margin: 20px 8px;
+}

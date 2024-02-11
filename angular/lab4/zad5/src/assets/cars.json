@@ -1,0 +1,32 @@
+[
+    {
+        "brand": "Toyota",
+        "model": ["Corolla", "Yaris", "RAV4", "C-HR"],
+        "color": [["red", "black", "silver"], ["red"], ["black", "aqua"], ["red", "yellow", "orange", "grey"]],
+        "equipment": ["a", "b", "c", "d"]
+    },
+    {
+        "brand": "Skoda",
+        "model": ["Octavia", "Fabia"],
+        "color": [["green", "black", "violet"], ["red", "black", "silver", "magenta", "orange"]],
+        "equipment": ["e", "f"]
+    },
+    {
+        "brand": "Dacia",
+        "model": ["Duster"],
+        "color": [["red", "grey", "brown", "black"]],
+        "equipment": ["g"]
+    },
+    {
+        "brand": "Hyundai",
+        "model": ["Tucson", "i30"],
+        "color": [["yellow", "blue"], ["red", "black", "violet"]],
+        "equipment": ["h", "i"]
+    },
+    {
+        "brand": "Kia",
+        "model": ["Sportage"],
+        "color": [["blue"]],
+        "equipment": ["j"]
+    }
+]

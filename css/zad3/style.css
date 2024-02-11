@@ -1,0 +1,115 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 18%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.title{
+    margin: 20px 0 0 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sub{
+    margin: 5px 0 0 20px;
+    color: red;
+}
+
+.desc{
+    margin: 20px;
+    color: grey;
+}
+
+hr{
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: lightgrey;
+    border-width: 0;
+    height: 1px;
+}
+
+.footer{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    height: 20px;
+    background-color: red;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.inter{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    font-size: 15px;
+    color: grey;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        width:22.5%;
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .container{
+        width:30%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+    .container{
+        width:auto;
+    }
+}

@@ -1,0 +1,22 @@
+<app-child [item]="i"></app-child>
+
+<div id="container">
+  <h2>Wybierz temat</h2>
+  <div id="topics">
+    <div class="topic">
+      <h4>The Basics</h4>
+      <p>Core Angular basics you have to know</p>
+      <button (click)="clicked(0)">Learn more</button>
+    </div>
+    <div class="topic">
+      <h4>Components</h4>
+      <p>Components are a core concept for building Angular UIs and apps</p>
+      <button (click)="clicked(1)">Learn more</button>
+    </div>
+    <div class="topic">
+      <h4>Events</h4>
+      <p>Events are important in Angualar</p>
+      <button (click)="clicked(2)">Learn more</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,324 @@
+body{
+    background-color: lightgrey;
+}
+
+:root{
+    --color: dodgerblue;
+    --gradient: rgb(116, 184, 252);
+}
+
+main{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 40vw;
+}
+
+#left{
+    position: relative;
+    background-image: linear-gradient(to top right, var(--color), var(--gradient)); 
+    width: 55%;
+    height: 100%;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 45%;
+    background-color: white;
+    left: 50%;
+    font-size: 1.8vw;
+    padding: 5%;
+}
+
+#word{
+    color: white;
+    position: absolute;
+    font-size: 16vw;
+    opacity: 0.2;
+    top: 5vw;
+    left: 2vw;
+    z-index: 1;
+}
+
+#shoe{
+    position: absolute;
+    width: 135%;
+    height: auto;
+    left: -35%;
+    top: 10%;
+    z-index: 2;
+    transform: rotate(-20deg); 
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+#nike{
+    position: absolute;
+    width: 30%;
+    top: 5%;
+    left: 5%;
+}
+
+#share{
+    right: 5%;
+    top: 5%;
+    position: absolute;
+    color: var(--color);
+    background-color: white;
+    border-radius: 100%;
+    border: 1vw solid white;
+    cursor: pointer;
+}
+
+#a{
+    display: flex;
+    align-items: center;
+}
+
+#a1{
+    font-size: 3.5vw;
+    font-weight:bolder;
+}
+
+#a2{
+    color: white;
+    background-color: var(--color);
+    padding: 0.4vw;
+    height: fit-content;
+    margin-left: 1vw;
+    border-radius: 0.7vw;
+}
+
+#b{
+    font-weight: bold;
+    color:dimgrey;
+}
+
+.c{
+    font-weight: bold;
+}
+
+#d{
+    color: grey;
+}
+
+#e{
+    display: flex;
+}
+
+.color{
+    margin-left: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: black;
+    border-radius: 100%;
+    border: 0.5vw solid black;
+    cursor: pointer;
+}
+
+input[name="color"]:checked + label{
+    border-color: white;
+    box-shadow: 0 0 1vw grey;
+}
+
+:root:has(body>main>#right>#e>input[id="c1"]:checked){
+    --color: dodgerblue;
+    --gradient: rgb(116, 184, 252);
+}
+
+:root:has(body>main>#right>#e>input[id="c2"]:checked){
+    --color: red;
+    --gradient: rgb(252, 66, 66);
+}
+
+:root:has(body>main>#right>#e>input[id="c3"]:checked){
+    --color: green;
+    --gradient: rgb(70, 121, 70);
+}
+
+:root:has(body>main>#right>#e>input[id="c4"]:checked){
+    --color: orange;
+    --gradient: rgb(253, 196, 89);
+}
+
+:root:has(body>main>#right>#e>input[id="c5"]:checked){
+    --color: rgb(46, 46, 46);
+    --gradient: grey;
+}
+
+main:has(#right>#e>input[id="c1"]:checked)>#left>#shoe{
+    filter: grayscale(0%) hue-rotate(0deg) saturate(1);
+
+}
+
+main:has(#right>#e>input[id="c2"]:checked)>#left>#shoe{
+    filter: grayscale(0%) hue-rotate(120deg) saturate(1.6);
+
+}
+
+main:has(#right>#e>input[id="c3"]:checked)>#left>#shoe{
+    filter: grayscale(0%) hue-rotate(240deg) saturate(1);
+
+}
+
+main:has(#right>#e>input[id="c4"]:checked)>#left>#shoe{
+    filter: grayscale(0%) hue-rotate(140deg) saturate(2);
+
+}
+
+main:has(#right>#e>input[id="c5"]:checked)>#left>#shoe{
+    filter: grayscale(100%) hue-rotate(0deg) saturate(1);
+}
+
+
+label[for="c1"]{
+    background-color:dodgerblue;
+    border-color:dodgerblue;
+}
+
+label[for="c2"]{
+    background-color:red;
+    border-color:red;
+}
+
+label[for="c3"]{
+    background-color:green;
+    border-color:green;
+}
+
+label[for="c4"]{
+    background-color:orange;
+    border-color:orange;
+}
+
+#g{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#g1{
+    display: flex;
+    align-items: center;
+    background-color: var(--color);
+    color: white;
+    width: fit-content;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+#g2{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+input{
+    display: none;
+}
+
+input[name="size"]:checked + label{
+    background-color: var(--color);
+    color: white;
+}
+
+#f{
+    display: flex;
+    align-items: center;
+}
+
+.size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    background-color: lightgrey;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+input[name="size"]:checked #shoe{
+    filter: greyscale(100%);
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    main{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #left{
+        width: 100%;
+        height: 60vw;
+        z-index: -1;
+    }
+    
+    #right{
+        width: 90%;
+        height: 90vw;
+        font-size: 4vw;
+    }
+
+    #word{
+        font-size: 36vw;
+        top: 12vw;
+        left: 7vw;
+    }
+
+    #shoe{
+        position: relative;
+        width: 100%;
+        transform: rotate(0); 
+        margin-left: -5%;
+        left: 2vw;
+    }
+
+    #share{
+        font-size: 4vw !important;
+        border-width: 2vw;
+    }
+
+    #a1{
+        font-size: 7vw;
+    }
+
+    .color{
+        height: 3vw;
+        width: 3vw;
+        border-width: 1vw;
+    }
+
+    .size{
+        width: 6vw;
+        height: 6vw;
+        border-radius: 1vw;
+    }
+
+    #trolley{
+        font-size: 3vw !important;
+    }
+
+    #g2{
+        font-size: 6vw !important;
+    }
+
+}
+
+

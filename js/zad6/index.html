@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="book"></div>
+    <form action="#">
+        <div class="pole">
+            <p class="sidetext">IMIĘ I NAZWISKO</p>
+            <input id="name" type="text" required pattern="\p{Lu}\p{Ll}*[ ]\p{Lu}\p{Ll}*|\p{Lu}\p{Ll}*[ ]\p{Lu}\p{Ll}*-\p{Lu}\p{Ll}*">
+        </div>
+        <div class="pole">
+            <p class="sidetext">TELEFON</p>
+            <input id="number" type="text" required pattern="([ ]*\d[ ]*){9}|\+([ ]*\d[ ]*){12}">
+        </div>
+        <button id="dodaj">Dodaj</button>
+    </form>
+</body>
